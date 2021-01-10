@@ -63,7 +63,7 @@ $(function () {
               // 将 token 令牌存储到客户端本地
               localStorage.setItem('token', res.token)
               // 跳转到后台主页
-              location.href = '/index.html'
+              location.href = 'index.html'
         }
     });
   })
