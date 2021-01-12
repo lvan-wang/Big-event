@@ -11,7 +11,7 @@ $.ajaxPrefilter(function (options) {
     // 全局统一挂载 complete 回调函数 监控 ajax 请求完是否身份验证失败
     options.complete = function (res) {
         // console.log(res);
-        if (res.responseJSON.status !== 0) {
+        if (res.responseJSON.status !== 0 && res.responseJSON.message === '身份认证失败！') {
             return location.href = 'login.html'
         }
     }

@@ -27,7 +27,7 @@ $(function () {
     })
     // 提交并监听注册的请求
     $('.register').on('submit', function (e) {
-        console.log(666);
+        // console.log(666);
         // 阻止默认提交行为
         e.preventDefault();
         var data = $(this).serialize();
